@@ -1,2 +1,38 @@
-# instagram_app
- This is a basic Node.js and Express application that simulates a simple Instagram-like platform. Here's a breakdown of what each part of the code does:  Setting Up Express:  Requires the express, path, and uuid modules. Initializes an Express application and sets the view engine to EJS. Specifies the directory where the views (EJS templates) are located. Configures static file serving using express.static() to serve CSS and client-side JavaScript files. Parses incoming request bodies using express.json() and express.urlencoded() middleware. Implements method overriding using method-override middleware. Data:  Initializes an array named posts to store post objects. Each post object has an id, username, img (image URL), and caption. Routing:  Defines routes for different operations: GET /insta: Renders the homepage (index.ejs) with all posts. GET /insta/new: Renders the form (new.ejs) to create a new post. POST /insta: Creates a new post and redirects to the homepage. GET /insta/:id: Renders the details of a specific post (show.ejs) based on its ID. PATCH /insta/:id: Updates the caption and image of a specific post and redirects to the homepage. GET /insta/:id/edit: Renders the form (edit.ejs) to edit a specific post. DELETE /insta/:id: Deletes a specific post and redirects to the homepage. Listening for Requests:  Starts the server and listens on port 3000. Outputs a message to the console indicating that the server is running. Overall, this application allows users to view existing posts, create new posts, edit existing posts, and delete posts, providing basic CRUD (Create, Read, Update, Delete) functionality similar to Instagram.
+Mini-Instagram
+Mini-Instagram is a simple web application built with Express.js and EJS, designed to simulate some basic functionalities of Instagram.
+
+Features
+View All Posts: Browse through all the posts shared by users.
+Add New Post: Share your own posts by adding a new entry.
+View Single Post: Click on a post to view it in detail.
+Edit Post: Modify the content of your existing posts.
+Delete Post: Remove unwanted posts from your feed.
+Technologies Used
+Express.js: A minimal and flexible Node.js web application framework used for handling HTTP requests and rendering views.
+EJS (Embedded JavaScript): A templating language that generates HTML markup with JavaScript.
+UUID (Universally Unique Identifier): Used to generate unique identifiers for posts.
+Method-Override: Middleware for handling HTTP methods like PUT and DELETE in forms.
+Path: A core module in Node.js used for handling file paths.
+Getting Started
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/Shivansh-Awasthi/instagram_app
+Install dependencies:
+
+bash
+Copy code
+npm install
+Run the server:
+
+bash
+Copy code
+npm start
+Open your browser and visit http://localhost:3000/insta to view the application.
+
+Usage
+Click on "Add new Post" to create a new post.
+Click on a post to view it in detail. You can edit or delete the post from the single post view.
+Use the edit button to modify the content of your posts.
+Click on the delete button to remove a post from your feed.
