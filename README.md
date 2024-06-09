@@ -36,3 +36,7 @@ Click on "Add new Post" to create a new post.
 Click on a post to view it in detail. You can edit or delete the post from the single post view.
 Use the edit button to modify the content of your posts.
 Click on the delete button to remove a post from your feed.
+
+
+## Deployed Website
+Check out the live version of the project [here](https://instagram-app-1dqm.onrender.com/).
