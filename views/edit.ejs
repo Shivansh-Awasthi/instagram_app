@@ -12,7 +12,7 @@
         <h3>Edit your Post.</h3>
         <p>post id: <%=post.id%> </p>
         <p>post username: @<%=post.username%> </p>
-        <form method="post" action="/insta/<%=post.id%>?_method=PATCH" >
+        <form method="post" action="/<%=post.id%>?_method=PATCH" >
             <h4>Img edit</h4>
             <textarea name="img" rows="6" cols="60"><%=post.img%></textarea>
             <br> <br>
