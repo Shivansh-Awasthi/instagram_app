@@ -11,7 +11,7 @@
         <h1 class="instagram-header">Instagram</h1>
     </header>
         <br> <br>
-        <a class="new-button" href="/insta/new">Create New Post</a>
+        <a class="new-button" href="/new">Create New Post</a>
         <br><br> <br>
   
     <div class="container">
@@ -21,9 +21,9 @@
                 <img src="<%= post.img %>" alt="img">
                 <p><%= post.caption %></p>
                 <div class="post-buttons">
-                    <a class="view-post" href="/insta/<%= post.id %>">View Post</a>
-                    <a class="edit-post" href="/insta/<%= post.id %>/edit">Edit</a>
-                    <form method="post" action="/insta/<%= post.id %>?_method=DELETE">
+                    <a class="view-post" href="/<%= post.id %>">View Post</a>
+                    <a class="edit-post" href="/<%= post.id %>/edit">Edit</a>
+                    <form method="post" action="/<%= post.id %>?_method=DELETE">
                         <button class="delete-post">Delete</button>
                     </form>
                 </div>
